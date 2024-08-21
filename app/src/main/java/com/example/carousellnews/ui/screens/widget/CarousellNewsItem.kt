@@ -63,7 +63,7 @@ fun CarousellNewsItem(
                     maxLines = 2,
                 )
                 Text(
-                    text = item.time_created.toRelativeTime(LocalContext.current),
+                    text = item.time_created.toRelativeTime(),
                     style = Typography.body2,
                 )
             }

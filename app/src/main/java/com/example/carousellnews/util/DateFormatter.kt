@@ -1,12 +1,11 @@
 package com.example.carousellnews.util
 
-import android.content.Context
 import java.time.Duration
 import java.time.Instant
 import java.time.LocalDateTime
 import java.time.ZoneId
 
-fun Long.toRelativeTime(context: Context): String {
+fun Long.toRelativeTime(): String {
     // tried using this library but it didn't work for multiple years ago, so i resorted to making it manually
     //val date = DateUtils.getRelativeDateTimeString(context, this*1000, MINUTE_IN_MILLIS, TEN_YEARS_IN_MILLI, 0)
     val now = LocalDateTime.now()
