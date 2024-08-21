@@ -5,7 +5,6 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
 import androidx.compose.material.Text
@@ -27,7 +26,11 @@ fun CarousellNewsItem(
 ) {
     Card(
         modifier = modifier
-            .padding(16.dp),
+            .padding(
+                top = 16.dp,
+                start = 16.dp,
+                end = 16.dp,
+            ),
         shape = RoundedCornerShape(8.dp),
         backgroundColor = Color.White,
     ) {

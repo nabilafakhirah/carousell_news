@@ -11,13 +11,15 @@ import androidx.compose.runtime.Composable
 private val DarkColorScheme = darkColors(
     primary = Purple80,
     primaryVariant = PurpleGrey80,
-    secondary = Pink80
+    secondary = Pink80,
+    background = carousellBackground
 )
 
 private val LightColorScheme = lightColors(
     primary = Purple40,
     primaryVariant = PurpleGrey40,
-    secondary = Pink40
+    secondary = Pink40,
+    background = carousellBackground,
 )
 
 @Composable

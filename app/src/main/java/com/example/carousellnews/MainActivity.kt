@@ -8,6 +8,7 @@ import androidx.compose.material.Scaffold
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
+import com.example.carousellnews.ui.screens.CarousellNewsListScreen
 import com.example.carousellnews.ui.theme.CarousellNewsTheme
 import com.example.carousellnews.ui.theme.carousellBackground
 
@@ -22,12 +23,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = carousellBackground
                 ) {
-                    Scaffold(
-                        /*bottomBar = {
-                            BottomNavigationView(navController = navController)
-                        }*/
-                    ) {
-                        // later set content
+                    Scaffold {
+                        CarousellNewsListScreen()
                     }
                 }
             }
