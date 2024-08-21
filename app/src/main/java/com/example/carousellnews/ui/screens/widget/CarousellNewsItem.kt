@@ -15,6 +15,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import com.example.carousellnews.R
@@ -55,12 +56,15 @@ fun CarousellNewsItem(
             ) {
                 Text(
                     text = item.title,
-                    style = Typography.h5
+                    style = Typography.h5,
+                    maxLines = 2,
+                    overflow = TextOverflow.Ellipsis,
                 )
                 Text(
                     text = item.description,
                     style = Typography.body1,
                     maxLines = 2,
+                    overflow = TextOverflow.Ellipsis,
                 )
                 Text(
                     text = item.time_created.toRelativeTime(),
