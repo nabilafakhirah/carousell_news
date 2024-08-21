@@ -1,8 +1,7 @@
-package com.example.data.provider
+package com.example.carousellnews.provider
 
-import com.example.carousellnews.BuildConfig
-import com.example.data.api.NewsApi
-import com.example.data.util.BASE_URL
+import com.example.carousellnews.data.api.NewsApi
+import com.example.carousellnews.util.BASE_URL
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -20,11 +19,7 @@ object NetworkModule {
     @Singleton
     fun provideLoggingInterceptor(): HttpLoggingInterceptor {
         return HttpLoggingInterceptor().apply {
-            if (BuildConfig.DEBUG) {
-                setLevel(HttpLoggingInterceptor.Level.BODY)
-            } else {
-                setLevel(HttpLoggingInterceptor.Level.NONE)
-            }
+            setLevel(HttpLoggingInterceptor.Level.BODY)
         }
     }
 

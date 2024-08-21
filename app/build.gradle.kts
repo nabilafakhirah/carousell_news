@@ -90,4 +90,9 @@ dependencies {
     implementation(libs.coroutine)
 
     implementation(libs.gson)
+
+    implementation(libs.retrofit)
+    implementation(libs.converter.moshi)
+    implementation(libs.okhttp)
+    implementation(libs.logging.interceptor)
 }

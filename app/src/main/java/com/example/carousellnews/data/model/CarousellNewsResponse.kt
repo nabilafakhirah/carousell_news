@@ -1,4 +1,4 @@
-package com.example.data.model
+package com.example.carousellnews.data.model
 
 import android.os.Parcelable
 import com.squareup.moshi.Json
@@ -13,9 +13,9 @@ data class CarousellNewsResponse(
     @Json(name="description")
     val description: String,
     @Json(name="banner_url")
-    val bannerUrl: String,
+    val banner_url: String,
     @Json(name="time_created")
-    val timeCreated: Long,
+    val time_created: Long,
     @Json(name="rank")
     val rank: Int,
 ) : Parcelable

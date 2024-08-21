@@ -1,4 +1,4 @@
-package com.example.carousellnews
+package com.example.carousellnews.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,7 +11,9 @@ import androidx.navigation.compose.rememberNavController
 import com.example.carousellnews.ui.screens.CarousellNewsListScreen
 import com.example.carousellnews.ui.theme.CarousellNewsTheme
 import com.example.carousellnews.ui.theme.carousellBackground
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

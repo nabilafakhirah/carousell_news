@@ -1,8 +1,8 @@
-package com.example.data.provider
+package com.example.carousellnews.provider
 
-import com.example.data.api.NewsApi
-import com.example.data.repository.NewsRepository
-import com.example.data.repository.NewsRepositoryImpl
+import com.example.carousellnews.data.api.NewsApi
+import com.example.carousellnews.data.repository.NewsRepository
+import com.example.carousellnews.data.repository.NewsRepositoryImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

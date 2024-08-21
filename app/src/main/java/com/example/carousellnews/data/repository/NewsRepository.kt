@@ -1,6 +1,6 @@
-package com.example.data.repository
+package com.example.carousellnews.data.repository
 
-import com.example.data.model.CarousellNewsResponse
+import com.example.carousellnews.data.model.CarousellNewsResponse
 import com.example.data.util.DataResult
 import kotlinx.coroutines.flow.Flow
 

@@ -1,6 +1,6 @@
-package com.example.data.api
+package com.example.carousellnews.data.api
 
-import com.example.data.model.CarousellNewsResponse
+import com.example.carousellnews.data.model.CarousellNewsResponse
 import retrofit2.http.GET
 
 interface NewsApi {

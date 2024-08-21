@@ -26,6 +26,7 @@ gson = "2.8.8"
 kotlin-bom = "1.8.0"
 appcompat = "1.6.1"
 material = "1.9.0"
+joda = "2.12.7"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -72,6 +73,7 @@ gson = { group = "com.google.code.gson", name ="gson", version.ref = "gson" }
 kotlin-bom = { group = "org.jetbrains.kotlin", name = "kotlin-bom", version.ref = "kotlin-bom" }
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 com-google-android-material-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+joda-time = { group = "net.danlew", name = "joda", version.ref = "joda" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
