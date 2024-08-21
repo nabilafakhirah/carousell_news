@@ -25,7 +25,7 @@ class CarousellNewsListViewModel @Inject constructor(
         newsListResponse.onEach { result ->
             when (result) {
                 is DataResult.Success -> {
-                    newsList = result.data.orEmpty().sortedBy { it.time_created }
+                    newsList = result.data.orEmpty().sortedByDescending { it.time_created }
 
                     _state.value = CarousellNewsListState(
                         newsList = newsList,
@@ -49,5 +49,22 @@ class CarousellNewsListViewModel @Inject constructor(
                 }
             }
         }.launchIn(viewModelScope)
+    }
+
+    fun sortByRanking() {
+        val sortedList = newsList.sortedBy { it.rank }
+        _state.value = CarousellNewsListState(
+            newsList = sortedList,
+            isLoading = false,
+            isError = false,
+        )
+    }
+
+    fun sortByDate() {
+        _state.value = CarousellNewsListState(
+            newsList = newsList,
+            isLoading = false,
+            isError = false,
+        )
     }
 }

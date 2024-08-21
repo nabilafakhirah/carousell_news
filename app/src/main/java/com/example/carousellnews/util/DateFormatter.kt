@@ -1,8 +1,6 @@
 package com.example.carousellnews.util
 
 import android.content.Context
-import android.text.format.DateUtils
-import android.text.format.DateUtils.MINUTE_IN_MILLIS
 import java.time.Duration
 import java.time.Instant
 import java.time.LocalDateTime
