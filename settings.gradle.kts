@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "carousell news"
 include(":app")
- 
+include(":data")

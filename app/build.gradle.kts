@@ -86,18 +86,8 @@ dependencies {
     kapt(libs.hilt.compiler)
     implementation(libs.hilt)
 
-    implementation(libs.retrofit)
-    implementation(libs.converter.moshi)
-    implementation(libs.okhttp)
-    implementation(libs.logging.interceptor)
-
     implementation(libs.paging)
     implementation(libs.coroutine)
 
-    implementation(libs.room.runtime)
-    implementation(libs.room.common)
-    implementation(libs.room.ktx)
-    implementation(libs.youtube.player)
     implementation(libs.gson)
-    kapt(libs.room.compiler)
 }

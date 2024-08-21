@@ -23,6 +23,9 @@ google-play-service = "19.2.0"
 shared-preference = "1.0.0"
 youtube-player = "11.1.0"
 gson = "2.8.8"
+kotlin-bom = "1.8.0"
+appcompat = "1.6.1"
+material = "1.9.0"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -66,6 +69,9 @@ play-service-auth = { group = "com.google.android.gms", name = "play-services-au
 shared-preference = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "shared-preference" }
 youtube-player = { group = "com.pierfrancescosoffritti.androidyoutubeplayer", name = "core", version.ref = "youtube-player" }
 gson = { group = "com.google.code.gson", name ="gson", version.ref = "gson" }
+kotlin-bom = { group = "org.jetbrains.kotlin", name = "kotlin-bom", version.ref = "kotlin-bom" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+com-google-android-material-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
